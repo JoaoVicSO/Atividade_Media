@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - cálculo de média</title>
+</head>
+<body>
+    <h3>Média: <span id="medi"></span></h3>
+    <h3>Situação: <span id="situ"></span></h3>
+
+    <script>
+        let nota1 = parseFloat(prompt('Digite a Primeira nota:'));
+        let nota2 = parseFloat(prompt('Digite a Segunda nota:'));
+        let media = (nota1 + nota2)/2;
+       
+        if (media >= 6) {
+            document.getElementById('medi').innerHTML= media;
+            document.getElementById('situ').innerHTML= 'Aprovado';
+            document.getElementById('situ').style.color= 'blue';
+        } 
+        else {
+            document.getElementById('medi').innerHTML= media;
+            document.getElementById('situ').innerHTML= 'Reprovado';
+            document.getElementById('situ').style.color= 'red';
+        }
+    
+    </script>
+
+
+</body>
+</html>
